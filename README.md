@@ -32,8 +32,7 @@ This project demonstrates an end-to-end real-time data pipeline using **Kafka**,
 
 ## 📁 Project Structure
 
-project-root/
-│
+kafka-air-quality-project/
 ├── producer/
 │ └── fetch_data.py
 ├── consumer/
@@ -42,4 +41,4 @@ project-root/
 │ └── email_alert.py
 ├── config/
 │ └── .env
-└── README.md
+├── README.md
