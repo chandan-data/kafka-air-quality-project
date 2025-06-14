@@ -42,3 +42,19 @@ kafka-air-quality-project/
 ├── config/
 │ └── .env
 ├── README.md
+
+
+## ⚙️ How It Works
+
+1. `fetch_data.py` fetches AQI data every few seconds for 15+ Indian cities.
+2. Data is pushed to a Kafka topic named `air_quality`.
+3. `save_to_db.py` consumes the data and stores it in PostgreSQL.
+4. If PM2.5 > 100, `email_alert.py` triggers an alert email.
+
+---
+
+## 📧 Email Alerts
+
+Email is triggered if:
+PM2.5 > 100
+
